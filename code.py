@@ -22,7 +22,7 @@ Summary = pd.DataFrame(columns = ['Group','# Trans','Sales','Costs','InitialMarg
 #Name data source directory
 SkuSales_directory = "Z:\Janette\P&Ls - Web\Sku Sales Queries"
 
-os.chdir("Z:/Janette/P&Ls - Web")
+os.chdir("Z:/P&Ls")
 
 divisions = ["CONSUMABLES         ", "HARDLINES           ","SPECIALTY           ", "Aggregate"]
 ###################select 0 through 3 from above list ########################################
@@ -46,7 +46,7 @@ for division in divisions:
   
   for Month in DataList:
     #######Select a month to process, or two months, or more######
-    #AggregateData = pd.concat([MayData, JuneData]) #Brenda said she wants June and May together for now
+    #AggregateData = pd.concat([MayData, JuneData]) 
     CurrentMonthData = Month
     
     #Returns a string of the current month
@@ -82,7 +82,7 @@ for division in divisions:
     MeanShippingCost = 13.33
     MedianShippingCost = 9.91
     ModeShippingCost = 9.42
-    #Which statisic above will we use in the formulas through the program?
+  
     EstimateShippingCost = ModeShippingCost
     
     #ITEM ANALYSIS
