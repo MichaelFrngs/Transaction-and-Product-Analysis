@@ -29,16 +29,16 @@ divisions = ["CONSUMABLES         ", "HARDLINES           ","SPECIALTY          
 #selectDivision = divisions[2]  #Note: Aggregate computes all three.
 
 for division in divisions:
-  DIVISION = division      #DIVISION = selectDivision             #< use if you want to do one by one
+  DIVISION = division      #DIVISION = selectDivision           
   
-  #load data. MUST FOLLOW THIS NAMING CONVENTION
+  #Load data. MUST FOLLOW THIS NAMING CONVENTION
   os.chdir(f"{SkuSales_directory}")
   SeptemberData = pd.DataFrame(pd.read_excel("Sku Sales Query for Web September 2019.xlsx"))
   AugustData = pd.DataFrame(pd.read_excel("Sku Sales Query for Web August 2019.xlsx"))
   JulyData = pd.DataFrame(pd.read_excel("Sku Sales Query for Web July 2019.xlsx"))
   JuneData = pd.DataFrame(pd.read_excel("Sku Sales Query for Web June 2019.xlsx",'June 2019 Sales Data'))
   MayData = pd.DataFrame(pd.read_excel("Sku Sales Query for Web May 2019.xlsx",'Sheet1'))
-  Freight_and_Margin_Data = pd.read_excel("Z:/Janette/P&Ls - Web/Merged Datasets/Sku Sales, Fedex, OMS.xlsx", "Shipment Detail (Fedex)")
+  Freight_and_Margin_Data = pd.read_excel("Z:/P&Ls - Web/Merged Datasets/Sku Sales, Fedex, OMS.xlsx", "Shipment Detail (Fedex)")
   OMS_Data = pd.read_excel("Z:/P&Ls - Web/Merged Datasets/Sku Sales, Fedex, OMS.xlsx", "OMS Data 5-15-19 to 09-06-19")
   
   #List of data to export
