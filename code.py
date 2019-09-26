@@ -39,7 +39,7 @@ for division in divisions:
   JuneData = pd.DataFrame(pd.read_excel("Sku Sales Query for Web June 2019.xlsx",'June 2019 Sales Data'))
   MayData = pd.DataFrame(pd.read_excel("Sku Sales Query for Web May 2019.xlsx",'Sheet1'))
   Freight_and_Margin_Data = pd.read_excel("Z:/Janette/P&Ls - Web/Merged Datasets/Sku Sales, Fedex, OMS.xlsx", "Shipment Detail (Fedex)")
-  OMS_Data = pd.read_excel("Z:/Janette/P&Ls - Web/Merged Datasets/Sku Sales, Fedex, OMS.xlsx", "OMS Data 5-15-19 to 09-06-19")
+  OMS_Data = pd.read_excel("Z:/P&Ls - Web/Merged Datasets/Sku Sales, Fedex, OMS.xlsx", "OMS Data 5-15-19 to 09-06-19")
   
   #List of data to export
   DataList = [JulyData, AugustData, SeptemberData]
@@ -53,7 +53,7 @@ for division in divisions:
     MonthNameString = CurrentMonth(CurrentMonthData)[1].replace('Data','')
     
     #Variable directory for each month
-    Export_Directory = f"Z:/Janette/P&Ls - Web/Product and Transaction Analysis/{MonthNameString}"
+    Export_Directory = f"Z:/P&Ls - Web/Product and Transaction Analysis/{MonthNameString}"
     
     #Import the current month's data
     AggregateData = pd.concat([CurrentMonth(CurrentMonthData)[0]])
@@ -129,7 +129,7 @@ for division in divisions:
           
     
           
-            #ADD SHIPPING STUFF HERE
+         
     #TRANSACTION ANALYSIS
     TransactionsDataFrame = pd.DataFrame(columns = ["TICKET_NUM", "NumOfItemsInTransaction", "TRANSACTION_EXT SALES", "TRANSACTION_EXT COSTS",
                                                     "TRANSACTION_Profit", "InitialMargin_%",
