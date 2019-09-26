@@ -44,8 +44,6 @@ for division in divisions:
   DataList = [JulyData, AugustData, SeptemberData]
   
   for Month in DataList:
-    #######Select a month to process, or two months, or more######
-    #AggregateData = pd.concat([MayData, JuneData]) 
     CurrentMonthData = Month
     
     #Returns a string of the current month
