@@ -20,7 +20,7 @@ Summary = pd.DataFrame(columns = ['Group','# Trans','Sales','Costs','InitialMarg
  
 
 #Name data source directory
-SkuSales_directory = "Z:\Janette\P&Ls - Web\Sku Sales Queries"
+SkuSales_directory = "Z:\P&Ls - Web\Sku Sales Queries"
 
 os.chdir("Z:/P&Ls")
 
