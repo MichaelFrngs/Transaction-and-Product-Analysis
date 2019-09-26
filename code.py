@@ -25,8 +25,7 @@ SkuSales_directory = "Z:\P&Ls - Web\Sku Sales Queries"
 os.chdir("Z:/P&Ls")
 
 divisions = ["CONSUMABLES         ", "HARDLINES           ","SPECIALTY           ", "Aggregate"]
-###################select 0 through 3 from above list ########################################
-#selectDivision = divisions[2]  #Note: Aggregate computes all three.
+
 
 for division in divisions:
   DIVISION = division      #DIVISION = selectDivision           
